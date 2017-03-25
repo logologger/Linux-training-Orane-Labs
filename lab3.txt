@@ -1,0 +1,104 @@
+List all process runnning on your system ,showing a full set of columns.Pipe that output to the less command so you can page through the list of processes
+
+Ans ps -au | less
+
+List all the process running on your system and sort those processes by the name of the user running ecah process
+
+Ans ps -au --sort=user
+
+List all processes running on the system and display the following columns of information:process ID,user name,group name,virtual memory size,resident memory size and the command
+
+Ans  ps -o 'user,rsz,vsz,pid,command,pid,group'
+
+Run the top command to view processes running on your system.Go back and forth bewteen sorting by CPU usage and memory consumption
+
+Ans : 
+top
+press 1 to sort according to cpu usage
+
+Type M for Memory usage sorting 
+and Press 1 for CPU usage sorting
+
+Start gedit from the shell as a background process
+Try Stopping gedit using kill
+
+Ans 
+gedit
+kill Process_ID
+
+U can get the Process_ID of the gedit from the terminal by typing ps in the terminal
+
+
+Restart the Kwrite process 
+
+Restart the kwrite process in background qith a nice value of 5
+Verify the priority set by you 
+Now use the renice command to change the priority to 7
+Verify again
+
+Ans. nice -5 gedit &
+
+To see all the process and their nice values use
+ps -o 'user,pid,command,nice'
+
+sudo renice -n -5 Process_ID
+
+Since Renice Command can be used by only Root user so we should have the root Privilage 
+
+In Fedora to have the root Privilage type su followed by the password of the root to get into root
+
+---------------------Working With Links----------------------------------------
+
+>> Create a directory.
+>> Inside that directory create an emoty file named original_file.
+>> Run the ls -l Command to see the file you just created
+>> Now Create a hard link to the original file and name it hard_file.
+
+-----------------------ANSWER FOR lINKS---------------------------------------
+
+
+mkdir link 
+cd link
+touch original_file
+ls -l
+cp -l original_file hard_file
+
+------------------------------------------------------------------------------
+
+-----------------------------LAB----------------------------------------------
+
+>>run the ls -l and ls -l commands and see the output the inode numbers.
+>> Now create a soft link to the original_file and name it soft_link
+>> Verify the inode numbers by typing ls -i
+>> Now using the cat command enter some test in the hard_file
+>> check the contents of all the files.
+>> Add the contents to the  soft_file and check again.
+
+--------------------------------------ANSWER---------------------------------
+
+ls -i is used for checking and seeing the inode number .
+cp -s orginal_file soft_file
+ls -il
+or u may like to use
+
+cat >> hard_file 
+Enter the text in the hard file
+
+cat hard_file // check the contents of it
+
+cat >> soft_file
+Enter the text in the soft file
+
+Now just verify that every file has the same content.....Ohh Yeah
+
+---------------------------VIM---------------------------------------------------
+Copy the /etc/services file to the /tmp directory.Open the /tmp/services file in vim and search for the term WorldWideWeb.
+Change that to read World Wide Web.
+
+--------------------------------ANSWER------------------------------------------
+
+
+cp /etc/services /tmp
+cd /tmp
+vim services
+Now in the Vim Mode type /WorldWideWeb and hit Enter .you will be redirected to the word WorldWideWeb and then change it to World Wide Web by getting into the insert mode by typing either a or i

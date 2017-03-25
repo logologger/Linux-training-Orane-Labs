@@ -1,0 +1,10 @@
+perm1=`ls -l $1|cut -c 2-10`
+perm2=`ls -l $2|cut -c 2-10`
+if [ $perm1 = $perm2 ]
+then 
+echo "the files have same permission $perm1 and $perm2"
+else
+echo "$1 permission is $perm1"
+echo "$2 permission is $perm2"
+fi
+

@@ -1,0 +1,61 @@
+1. Remember that function that needs to update the value of the variable dont want the variable itself rather they want  the address of the variable
+
+for example 
+
+scanf function that wants to update the value of variable is given like this
+scanf("%d",&a);
+
+In case of char array we give it like this
+
+scanf("%s",ch);
+
+ch[] is a character array and it is actually a variable pointer that stores the address of the first element of the array
+
+
+
+Now there is a problem with scanf 
+
+char s[5];
+
+scanf("%s",s);
+
+and you went on entering the value of s far beyond the range of s array
+
+so this will lead to error i.e segmentation fault or abort trap because that extra data which u entered will go in memory that has been properly allocated
+
+This is called buffer overflow 
+
+refer page 66 of head first for more clearance
+
+
+DIFFERENCE BETWEEN THE FGETS AND SCANF
+
+fgets is much better then scanf
+
+Synatax of fgets is
+char s[10];
+ 
+fgets(food,sizeof(food),stdin);
+
+fgets take a pointer to food and then it takes a maximum size of the string(/0 included)
+stdin means that data is coming from the keyboard
+
+fgets automatically takes the maximum size that can be taken in the array variable 
+
+
+fgets is much better if u want to get into the input the whole of a string in  a line
+
+fgets also neglects the spaces between the string where scanf fails
+
+Example
+If u want to read the string "Paro was mad before Dev and then Dev become mad for Paro"
+
+then fgets is a much better option as spaces doesnt have any effect while reading the string
+
+On the other hand in the scanf function u have to use regular expression to scanf this types of input
+
+scanf("%[^n]s",str);
+
+
+
+

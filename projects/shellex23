@@ -1,0 +1,6 @@
+if [ -f $1 ]
+then
+`date | tee -a $1`
+else
+`date < $1` 
+fi

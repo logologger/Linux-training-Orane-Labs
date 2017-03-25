@@ -1,0 +1,8 @@
+#include "stdio.h" is for local headers and #include<stdio.h> is for library headers
+
+Difference between static library and shared library is that
+
+In static library it just copies the object modules from the library into the executables as it is 
+while in shared library the linker just writes a record into the executable to indicate that at run time the executable needs to use that shared library  
+
+There is a program called dynamic linker that ensures that the shared libraries required by the executables are found and loaded into the memory

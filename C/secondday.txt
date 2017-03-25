@@ -1,0 +1,50 @@
+======================2nd DAY======================================
+
+This is the 2nd day of  mine
+
+
+Look at the example given in the page 57 
+there is an array contestants 
+
+contestansts[0]=2;
+
+*choice = contestants;
+
+What does choice stores ?
+
+choice stores the base address of the array that is the address of the contestants[0]
+
+So if you print the value of choice then its value is 2 =contestants
+
+array[i]=*(array+i)
+
+DIfference between array variable and pointer
+
+---1st basic statement is that array variables arent pointers(True upto somewhat limit )
+
+1.Basic difference is you can see in the sizeof(Array) and sizeof(pointer)
+
+example 
+char *str1="This is a test"
+char str2[]="This is a test"
+
+sizeof(str2)=15
+sizeof(str1)=4 or 8
+
+2.The address of the array....is the address of the array
+
+By this i mean to say that 
+
+char s[]="This is a test"
+
+s and &s are same
+
+s==&s are technically same because address of array  variable is the base address of the array i.e.address of s[0] is the address of the array which is defined in the array variable s and thus it can be said as equal to &s.
+
+
+BUT 
+consider a vatiable t 
+it reperesents itself as a variable and &t here represents the address of the variable t which are equal in both cases
+
+3. An array variable cant point anywhere else.
+

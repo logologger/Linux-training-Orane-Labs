@@ -1,0 +1,12 @@
+function func1
+{
+echo "this is the first defination of the function name"
+
+}
+func1
+function func1
+{
+echo "this is a repeat of the same function name"
+}
+func1
+echo "the exit status $?"

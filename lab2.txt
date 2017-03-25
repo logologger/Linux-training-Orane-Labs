@@ -1,0 +1,64 @@
+Write a GRep command that count the number of non-blank lines in the GPL-3 file.
+Write a grep command that select the lines from the GPL-3 that have the string licences
+Write a grep command that selects the lines from the GPL-3 that have atlest two digit without any other characters in between
+Write a grep command that selects the lines from the GPL-3 that start with A to G
+Write a grep command that does not match the pattern "code" in GPL-3 file
+Count the number of lines containing the word right
+try experimenting with chmod
+
+Create a file called /tmp/outoforder with following text
+
+Zebra
+Quebec
+hosts
+Alpha
+Romeo
+juliet
+unix
+XRay
+Xray
+1
+11
+2
+
+Sort the file in Dictionary order:
+sort -d /tmp/outoforder
+
+the Word xray is in the file two times.To remove the extra instances of it in your sort you can use
+
+sort -du /tmp/outoforder
+
+u is for uniqueness and d is the dictionary 
+if u want to ignore the cases using -f for it 
+
+Redirect the  output from the ls command to a file named Mylist.
+
+ls >mylist
+
+Write a command that will set the filee permissions of the file samplefile to read,write and exceute for the owner of the file,and read and excecute permissions for the group and for others ,using absolute mode(some reffered to as octal mode)
+
+
+Ans 1.
+
+grep -c [A-Za-z]* GPl-3
+
+Ans 2.
+
+grep "Licence" GPL-3
+
+Ans 3.
+
+grep [0-90-9]  GPl-3
+
+Ans 4
+grep "^[A-G]" GPL-3
+
+Ans 5
+ grep -v "code" GPL-3
+
+Ans 6
+grep -c "right" GPL-3
+
+Ans 7
+
+

@@ -1,0 +1,17 @@
+# expr doesnt handles the floating point values
+var1=10
+var2=15
+var3=`expr $var2 / $var1`
+echo "the Result us $var3"
+var3=$[1+3]
+echo "$var3"
+var4=$[$var2*$var3]
+echo $var4
+var6=100
+var7=50
+var8=200
+var9=1000
+var12=$[$var7*($var8-$var9)]
+echo "the final result is $var12"
+exit $var4
+exit 0

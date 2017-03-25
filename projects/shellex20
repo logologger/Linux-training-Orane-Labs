@@ -1,0 +1,8 @@
+if [ -f $1 ]
+then
+exec 3> $1
+echo "this data is appended" >&3
+else
+exec 3> $1
+echo "this is the first line $tempfile" >&3
+fi

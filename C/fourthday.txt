@@ -1,0 +1,4 @@
+===========This is the fourth day .I am in other City Not in My Home I mean=====
+
+
+Remember in C the string is stored as

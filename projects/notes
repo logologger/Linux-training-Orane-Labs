@@ -1,0 +1,10 @@
+exit status is $?
+for function it is 0
+comm is used for intersection and set difference
+
+$? stores the return value of the function
+exit status should be in the range of 0-255
+
+$#---gives the numbe of parameters passed
+
+to declare a variable as local use the local keyword  

@@ -1,0 +1,8 @@
+tempdir=`mktemp -d dir.XXXXXX`
+cd $tempdir
+tempfile1=`mktemp temp1.XXXXXX`
+tempfile2=`mktemp temp2.XXXXXX`
+exec 7 > $tempfile1
+exec 8 > $tempfile2
+echo "sending data to directory "$tempdir
+echo "this is  a test file data">&7

@@ -1,0 +1,93 @@
+void * is called General purpose pointer
+An array variable is just a pointer to the array .Is a struct variable pointer a pointer to a struct??
+No ,A struct variable is a name for the struct itself
+
+In Any Language ,When u are assigning a value ,it means that you are telling the computer to copy the data from one struct to another
+
+A struct is a data type made from a sequence of other data types.
+structs are fixed length
+struct fields are accessed by struct_name.field_name
+
+struct fields are stored in the memory in the same order as they appear in the code.
+
+you can nest structs
+
+typedef creates an alias for a data type
+
+if u use typedef with a struct ,then you can skip giving the struct a name
+	
+(*t).age != *t.age  are two very different things
+
+(*t).age ----If t is a pointer to a turtle struct ,then this is the age of the turtle
+
+*t.age  -----I am the contents of the memory location given by t.age visulalize me as *(t.age)
+
+
+t->age is actually same as (*t).age
+
+
+Now i got to know the difference t->age is (*t).age 
+ AND
+t.age is something different , It is just a copy of the struct fish t or anything
+
+t->age means age field that struct t points to that is (*t).age
+
+
+You might be asking 
+*t.age is not read as (*t).age ,,,Why ?
+Because Compiler Evaluates dot operator before it evaluates the *
+
+
+int x=0x64;
+
+it is not 64 it is actually 64 in base 16 
+
+when compiler sees 0x it treats the number as of base 16
+
+Bitfields 
+
+They are important when u are dealing with bit level information...
+they are defined using unsigned 
+
+typedef struct
+{
+	unsigned int first_visit:1;//specifies that only 1 bit is needed for storage
+	unsigned int last_bit:4;//specifies that only 4 bit is needed for storage
+}survey;
+
+
+If u really want to know about union just read thetutorialspoint.com......Itis the best source for understanding the fact behind the union 
+
+Union is actually when u want to store different types of data then it will allocate as many space as needed by the largest data type defined in the union 
+
+typedef union 
+{
+	int a;
+	float b;
+	long c;
+}iamunion;
+
+Now this union will store sizeof(long) type memory ..That is it will create as much memory as needed by the largest data type present in the union that is here it is long
+
+typedef enum
+{
+	VALUE1,
+	VALUE2,
+	VALUE3
+}iamenum;
+
+
+
+One thing to be notably mention by me is the 
+
+mag m={1,2,"three"};
+
+This compiles perfectly 
+
+BUT
+
+mag m;
+m={1,2,"three"};
+
+Gives compile time error Because compiler sees the 90th_line as an array rather then a struct
+

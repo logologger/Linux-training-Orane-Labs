@@ -1,0 +1,8 @@
+exec 0< unix.txt
+count=1
+while read line
+do
+echo "line #count:$line"
+count=$[$count+1]
+done
+echo "$count"

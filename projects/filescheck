@@ -1,0 +1,23 @@
+file1=$1
+file2=$2
+info1=`ls -l $file1`
+info2=`ls -l $file2`
+for r in $info1
+do
+p1=$r
+break
+done
+for r in $info2
+do
+p2=$r
+break
+done
+echo "$p1"
+echo "$p2"
+if [[ $p1==$p2 ]]
+then
+echo "SAme Permission"
+else
+echo "not same"
+fi
+# for checking the file with same permission we use ls -l fact|cut -c 2-10

@@ -1,0 +1,6 @@
+if [ -f "$1" ]
+then
+echo "this \n is file"
+else
+echo "This is not a file"
+fi

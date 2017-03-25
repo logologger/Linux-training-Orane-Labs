@@ -1,0 +1,12 @@
+function dbl
+{
+read -p "Enter a value" value
+echo "Doubling its value"
+return $[$value*2]
+}
+dbl
+echo "The new value is $?"
+#to get the function output use the backtick character 
+result=`dbl`
+#instead of return use echo to store result in this form 
+echo " the new value is $result"

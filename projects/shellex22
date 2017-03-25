@@ -1,0 +1,7 @@
+exec 0< rajat
+if [ -f $1 ]
+then
+`cat >> $1` <&0
+else
+`cat > $1` <&0
+fi

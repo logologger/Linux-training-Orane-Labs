@@ -1,0 +1,23 @@
+if date
+then 
+echo "it worked"
+fi
+echo "Now guess the Secret Color Of Harry Potter"
+read colorh
+if ( test $color="purple" )
+then
+echo "ohh yeah"
+else 
+echo "Sorry Your are Wrong"
+fi
+echo "Guess the Secret Color"
+read color
+if [ $color = "purple" ]
+then
+echo "You are right"
+fi
+IFS=:
+for test in `cat /etc/passwd`
+do
+echo $test
+done

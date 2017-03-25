@@ -1,0 +1,70 @@
+A simple struct is not enough ..U simply need pointers to connect those simple structres.. How you will connect them ? Simply by using struct pointers
+
+Linked List Why because array is not flexible ...
+A linked list is an example of abstract data structre because linked list is general : it can be used to store a lot of different kinds of data
+
+Array does not allows you to insert any data between two data but Linked List simple allows you to insert data
+
+That is you can variable peice of data and insert variable piece of data
+
+Create a recursive Structres-----------
+
+typedef struct island //You must give a struct name
+{
+	char *name;//Strings for 
+	char *opens;
+	char *closes;
+	struct island *next;// You store  a pointer to the next island in the struct
+}island;
+
+Find the example in the folder dsday
+
+Now the Question is how will you allocate space to the code at runtime?
+
+Just by using malloc();
+
+Now when u allocate memory in the heap it actually goes in the heap not in the stack.....stack is actually used for local storage and heap is used for dynamic storage
+
+heap memory is actually used for dynamic storage and usually it contains more memory than stack..Now one more advantage of heap that data in the heap doesnt usually gets erased ..It will only be removed or freed when you will free the memory.
+
+First getting a memory to heap is like getting a locker of data.
+
+There are only four storage in C
+
+Stack 
+Heap
+Globals 
+Constants
+
+
+malloc() function actually allocates memory in the heap and returns a pointer to it....
+
+If memory is analogy to Locker of Memory then pointer is analogy to key in the locker...
+
+
+The one good thing about heap is that you can store data there for a very long time but a bad thing is that you can store data there for a very long time...
+
+So you need to free the memory whenever u use it by calling free() function
+
+
+If u dont free the memory then it leads to a very famous memory bug called Memory LEAK...which is very hard to identify.
+
+islands * p = malloc(sizeof(islands));
+
+free(p);
+
+malloc is actually defined in the stdlib.h header file   
+
+strdup () is a string  that creates a copy of the string in the heap piece of memory .
+
+Now strdup() function works as follows .
+
+1. It first count the number of characters of the string.
+2. It then calls the malloc() function to allocate space.
+3. It then copies each of the characters to the new space on the heap.
+
+
+
+ 
+
+

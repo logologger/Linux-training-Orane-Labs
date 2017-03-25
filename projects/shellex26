@@ -1,0 +1,8 @@
+if [ $# -eq 0 ]
+then "echo Enter  the arguments"
+exit
+fi
+for i in $*
+do
+if
+

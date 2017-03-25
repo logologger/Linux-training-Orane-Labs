@@ -1,0 +1,4 @@
+read -p "Enter your name: " first last
+echo "checking data for $first $last"
+read -s -p "Enter your password " pass
+echo "is your password really $pass"

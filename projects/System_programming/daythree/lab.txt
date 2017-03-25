@@ -1,0 +1,6 @@
+Write a C program to create a directory  named test.Now in this directory create a text file with some contents in it.
+Create another directory test2 and copy the text file in the test directory to this directory
+Write a program that displays the contents of a file at the terminal 20 lines  at a time
+Write a C program to deletea a specific line from a file
+Write a C program to append the contents of one file to another in a third file
+Write a C program to print Environment vaiables

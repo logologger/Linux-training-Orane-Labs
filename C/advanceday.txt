@@ -1,0 +1,3 @@
+Ok ...So here we come to have to learn something about properly called as function Pointers...
+Now Lets first try out some code
+

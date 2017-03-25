@@ -1,0 +1,4 @@
+mytest=( one two three four )
+echo $mytest
+echo ${mytest[*]}
+

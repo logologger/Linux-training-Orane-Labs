@@ -1,0 +1,71 @@
+=======This is first night ..I am going to learn C=============
+
+GCC --Gnu Compiler Collection 
+Why Collection ?
+Because it can be used to compiler many languages
+
+C programs gets Compiler so that they can run faster ....Other languages like javascript and python even use some sort of hidden Compilation
+
+For Proper Compilation and execution of C program the synatax is
+
+gcc program.c -o program && ./program
+
+break statement is only used for loop and switch statements only 
+
+Break statement dont break if Statements
+
+C uses \0 to recognize the end of the string
+\0 is an ASCII character with value 0 
+C coders call this as null characters
+\0 also called as sentinel character
+
+
+--------------------------------------------------------------------------------
+
+================================POINTERS==========================
+
+
+Pointer is just the address of a peice of data in memory
+
+How useful ??
+Instead of  just passing whole copy of data just pass the address or pointer
+
+Before Understanding Pointer we will look into the memory of the computer 
+
+Stack =====================
+Heap  ===============================
+Globals ========
+Constants =========
+Code  ===============
+
+%p is the foramat specifier for pointer
+
+A variable declared inside a stack is usually inside a stack
+
+If u want to find the memory address of the variable x we will use &x
+
+& operator finds the address of the variable
+
+* operator can read the contents of a memory address
+
+* operator can also set the contents of a memory address
+
+In layman terms pointers are just variables that stores memory addresses
+ 
+sizeof -------
+
+it is an OPERATOR not a FUNCTION
+
+An operator is compiled to a sequence of instruction by the compiler while in function calling it has to jump to a seperate peice of code in the memory 
+
+Array name is actually a pointer pointing to the address of the first variable.
+
+Pointer is actually a variable that stores the address of the first variable
+
+------------sizeof(pointer) 
+Its answer depends on the architecture of the machine 
+for 32 bit system it is 4
+for 64 bit system it is 8
+
+Array variables are not pointers ----sizeof 
+

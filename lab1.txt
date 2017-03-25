@@ -1,0 +1,31 @@
+create a command that will list the contents of each subdirectory of the /home directory beginning with the letter k, count the number of files found, and save that number in a file called k-users-files.
+
+
+Create a Directory in your home directory called projects.In this projects Directory,create nine empty files that are named house1,house2,...and so on to house9.Assuming there are lots of other files in the directory some up with a single argument to Is that would list just those nine file.
+
+Ans ....
+mkdir projects
+cd projects
+touch house1
+touch house2
+touch house3
+touch house4
+..................
+
+
+................
+touch house9
+
+
+listing those nine files only we will use 
+ls -at
+or we can also user 
+ls h*
+
+
+
+Make the $HOME/projects/house/doors directory path.Creata the following empty files  within this dir4ctory path(try using absolute and relative paths from your home directory):
+-$HOME/projects/houses/bungalow.txt
+-$HOME/projects/houses/doors/bifold.txt
+-$HOME/projects/houses/outdoors/vegetation/landscape.txt
+

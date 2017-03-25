@@ -1,0 +1,12 @@
+Write an awk program to print all the fields 1 and 4 of a file that is passed as command line argument.the file contains lines of information that is seperated by "," as delimiter .the AWK program must print at the end the average of all   4th field data.
+
+Beginning linux Programming
+
+Proffessional Programming
+
+Wrox publishers
+
+CDAC 
+
+anand@oranelabs.com
+

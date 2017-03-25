@@ -1,0 +1,34 @@
+The Header file limits.h contains all the major maximum and minimum values for the data types
+
+For Example 
+INT_MAX,INT_MIN,FLT_MAX,FLT_MIN etc
+
+getopt(argc,argv,option pattern)
+
+An option followed by : represents that option expects a value or arguments after it
+
+getopt returns -1 then there are no options which are left to be read
+When getopt returns ? then it means that are unrecognized option which is stored in the optopt variable
+
+getopt(argc,argv,"ls:ef");
+s option takes an argument or value which is stored in the optarg variable
+
+getopt function is defined in the unistd.h header file
+unistd header is actually not a part of standard C Library.It was created to implement some of the POSIX standards
+POSIX were a set of standard that were created to run commands in all machines 
+
+A colon following an option in the string in getopt means that the option takes an additional arguments
+
+getopt() will record the options argument using the optarg variable
+
+After you have read all the option you should skip them using the optind variable
+
+TEMPORARY FILES
+
+Often ,programs will need to make use of temporary programs in the form of files
+Thes might hold intermdeiate results of computation or represent backup copies files made before critical operations
+The serious issue is that each temp file should have a new and unique name
+
+#include<stdio.h>
+char * tmpname(char * s);
+

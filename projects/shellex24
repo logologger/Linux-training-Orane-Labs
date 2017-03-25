@@ -1,0 +1,9 @@
+echo "Enter the file  name"
+read filename
+temp=`ls -al $filename`
+echo $temp
+#array = (user anotheruser someuser diffuser )
+for i in $temp
+do
+echo " $i"
+done

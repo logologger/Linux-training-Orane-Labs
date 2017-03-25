@@ -1,0 +1,7 @@
+function compile
+{
+echo "Enter the C file name"
+echo "Note this is only for normal c programs"
+read file_name
+gcc $file_name.c -o $file_name && ./$file_name
+}

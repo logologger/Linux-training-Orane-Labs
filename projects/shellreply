@@ -1,0 +1,5 @@
+read -p "Ente a number"
+fact=1
+for (( count=1;count<=$REPLY;count++ ))
+do
+$fact = $[$fact*count]

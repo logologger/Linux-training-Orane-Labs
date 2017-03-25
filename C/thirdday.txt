@@ -1,0 +1,27 @@
+======This is the third day==================
+
+Pointer arithematic
+
+Now 
+*(a+1) is technically equal to a[1]
+
+*(a+1) also means that it is pointing to the next memory address
+for char it is plus 1
+for integer it is plus 4
+
+Now here is something that should be know by us
+
+doses[3]=3[doses]=*(doses+3)=*(3+doses)
+
+You should know the basic difference between the array variables and pointer variables
+
+Now Array variables can be used as pointers
+but variables arent quit the same 
+
+sizeof(array) is different for pointer and array
+
+Array variables cant point to anything else
+
+Passing an array variable to pointer (I mean assigning it) to a pointer variable decays it
+
+ 

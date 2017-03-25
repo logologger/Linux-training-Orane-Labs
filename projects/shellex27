@@ -1,0 +1,11 @@
+echo "Enter the string"
+read string
+temp=`expr length $string`
+if (( temp>10 ))
+then
+echo "You are right "
+else
+echo "Sorry you are less"
+fi
+
+

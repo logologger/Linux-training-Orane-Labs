@@ -1,0 +1,15 @@
+ifor test in /home/*
+do
+if [ -d "$test" ]
+then
+echo "$test is a directory"
+elif [ -f "$test" ]
+then
+echo "$test is a file"
+fi
+done
+echo $1
+for file in `cat /codes/spoj/spoj5.c`
+do
+echo $file
+done

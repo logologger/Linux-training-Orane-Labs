@@ -1,0 +1,18 @@
+var1=10
+var2=5
+var3=111
+var4=90
+var5=`bc << EOF
+scale=4
+a1=($var1*$var2)
+b1=($var3*$var4)
+a1+b1
+EOF`
+echo "the final answer is $var5"
+if date
+then
+echo "it worked"
+fi
+var12=`echo "scale=4; 32/9"|bc`
+echo $var12
+if
